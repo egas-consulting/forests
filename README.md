@@ -1,2 +1,0 @@
-# forests
-Romanian Forests Map
