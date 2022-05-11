@@ -510,15 +510,15 @@
     // https://leafletjs.com/examples/layers-control/
     // https://gist.github.com/wboykinm/8108799
     L.control.layers({
-        'Defrișări anuale (2000-2019)': L.tileLayer('https://storage.googleapis.com/earthenginepartners-hansen/tiles/gfc_v1.7/loss_year_new/{z}/{x}/{y}.png', {opacity: 0.65, maxNativeZoom: 12, pane: 'overlay', maxZoom: 16,}).addTo(map),
-        'Defrișări cumulate 2000-2019': L.tileLayer('https://storage.googleapis.com/earthenginepartners-hansen/tiles/gfc_v1.7/loss/{z}/{x}/{y}.png', {opacity: 0.65, maxNativeZoom: 12, pane: 'overlay', maxZoom: 16,}),
+        'Defrișări anuale (2000-2019)': L.tileLayer('https://storage.googleapis.com/earthenginepartners-hansen/tiles/gfc_v1.7/loss_year_new/{z}/{x}/{y}.png', {opacity: 0.65, maxNativeZoom: 12, pane: 'overlay', maxZoom: 16,}),
+        'Defrișări cumulate 2000-2019': L.tileLayer('https://storage.googleapis.com/earthenginepartners-hansen/tiles/gfc_v1.7/loss/{z}/{x}/{y}.png', {opacity: 0.65, maxNativeZoom: 12, pane: 'overlay', maxZoom: 16,}).addTo(map),
         'Acoperire cu păduri în 2000': L.tileLayer('https://storage.googleapis.com/earthenginepartners-hansen/tiles/gfc_v1.4/tree/{z}/{x}/{y}.png', {opacity: 0.45, maxNativeZoom: 12, pane: 'overlay', maxZoom: 16,}),
         'Defrișări/Împăduriri 2000-2019': L.tileLayer('https://storage.googleapis.com/earthenginepartners-hansen/tiles/gfc_v1.7/loss_tree_gain/{z}/{x}/{y}.png', {opacity: 0.65, maxNativeZoom: 12, pane: 'overlay', maxZoom: 16,}),
         // 'Imagine satelit 2020': transparent,
         },
         overlays,
         {position: 'bottomleft',
-        collapsed: true,
+        collapsed: false,
         }
         ).addTo(map);
 
